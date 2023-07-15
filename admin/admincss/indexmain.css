@@ -1,0 +1,214 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background-color:#003399;
+}
+nav{
+	width: 100%;
+	height: 100px;
+	/*border: 1px solid red;*/
+}
+nav h5{
+	margin: 40px 100px 0px;
+	color:white;
+	float:left;
+	font-weight: bold;
+	/*border: 1px solid red;*/
+}
+.navImageDiv{
+	float: right;
+	margin: 20px 100px 0px;
+	/*border: 1px solid red;*/
+}
+.navImageDiv p{
+	color: white;
+}
+section{
+	width: 100%;
+	height: 100vh;
+	/*border: 1px solid red;*/
+	clear: both;
+}
+.leftAside{
+	width:15%;
+	height:100%;
+	background-color:#003399;
+	float: left;
+	/*border: 1px solid yellow;*/
+}
+.rightAside{
+	float: right;
+	width: 85%;
+	height: 100vh;
+	overflow: scroll;
+	/*border: 1px solid green;*/
+}
+aside ul li {
+	list-style-type: none;
+	margin: 5px 10px;
+	padding: 5px 20px;
+}
+aside ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+}
+aside ul li a:hover{
+	text-decoration: none;
+}
+.row1{
+	width: 100%;
+	height:auto;
+}
+.dashbordDiv{
+	float: left;
+	width: 33.33%;
+	height: 150px;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+.dashbordDiv img{
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	cursor: pointer;
+}
+/* ................................................Admin Login page................................................... */
+
+.center-div_login{
+	width: 25%;
+	margin:  70px auto;
+}
+
+.Logo-at-login{
+	margin: 0% 25%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-div_login h3{
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	font-style: bold;
+}
+
+.center-div_login p{
+	color: #00cc00;
+	text-align: center;
+	
+}
+
+.center-div_login p strong>a{
+	color: #009933;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.form-wrapper-div_login{
+  width: 90%;
+  margin: 2% auto;
+}
+
+.form-wrapper-div_login h4{
+	width: 100%;
+	font-size: 17px;
+	font-weight: 700;
+	font-style: normal;
+	color: #009999
+}
+
+.form_login input{
+	width: 100%;
+	margin: 2px 0px;
+	padding: 4px 10px;
+}
+.form_login input[type="submit"]{
+	background-color: #009999;
+	color: white;
+	font-size: 18px;
+	font-style: bold;
+	font-weight:bold;
+	border-radius: 10px;
+	padding: 5px 0;
+	margin: 8px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1135px){
+	.center-div_login{
+	width: 40%;
+	}
+
+}
+@media only screen and (max-width: 950px){
+	/*.center-div_signup{
+	width: 50%;
+	}*/
+
+}
+@media only screen and (max-width: 850px){
+
+	/*.center-div_signup{
+		width: 60%;
+	}*/
+
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 672px){
+	.center-div_login{
+	width: 60%;
+	}
+
+	/*.center-div_signup{
+		width: 70%;
+	}*/
+}
+@media only screen and (max-width: 598px){
+
+	/*.center-div_signup{
+		width: 77%;
+	}
+	.form-wrapper-div_signup{
+		width: 80%;
+	}*/
+
+}
+@media only screen and (max-width: 458px){
+	.center-div_login{
+	width: 80%;
+	}
+
+	/*.center-div_signup{
+		width: 85%;
+	}.
+	.form-wrapper-div_signup{
+		width: 90%;
+	}*/
+
+}
+@media only screen and (max-width: 350px){
+	.center-div_login{
+	width: 90%;
+	}
+}

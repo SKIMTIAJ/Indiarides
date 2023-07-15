@@ -1,0 +1,187 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.center-div_login{
+	width: 25%;
+	margin:  70px auto;
+}
+
+.Logo-at-login{
+	margin: 0% 25%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-div_login h3{
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	font-style: bold;
+}
+
+.center-div_login p{
+	color: #00cc00;
+	text-align: center;
+	
+}
+
+.center-div_login p strong>a{
+	color: #009933;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.form-wrapper-div_login{
+  width: 90%;
+  margin: 2% auto;
+}
+
+.form-wrapper-div_login h4{
+	width: 100%;
+	font-size: 17px;
+	font-weight: 700;
+	font-style: normal;
+	color: #009999
+}
+
+.form_login input{
+	width: 100%;
+	margin: 2px 0px;
+	padding: 4px 10px;
+}
+.form_login input[type="submit"]{
+	background-color: #009999;
+	color: white;
+	font-size: 18px;
+	font-style: bold;
+	font-weight:bold;
+	border-radius: 10px;
+	padding: 5px 0;
+	margin: 8px 0px;
+}
+
+/* ..........................................SiginUp Page.............................................................. */
+
+
+.center-div_signup{
+	width: 40%;
+	margin: auto;
+}
+
+.Logo-at-login{
+	margin: 0% 37.5%;
+	width: 25%;
+}
+.center-div_signup h3{
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	font-style: bold;
+}
+
+.center-div_signup p{
+	color: #00cc00;
+	text-align: center;
+	
+}
+
+.center-div_signup strong>a{
+	color: #009933;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.form-wrapper-div_signup{
+	width: 70%;
+  	margin: 2% auto;
+}
+.form-wrapper-div_signup h4{
+	width: 100%;
+	font-size: 17px;
+	font-weight: 700;
+	font-style: normal;
+	color: #009999
+}
+.form_signup input{
+	width: 100%;
+	margin: 2px 0px;
+	padding: 4px 10px;
+}
+.form_signup input[type="submit"]{
+	background-color: #009999;
+	color: white;
+	font-size: 18px;
+	font-style: bold;
+	font-weight:bold;
+	border-radius: 10px;
+	padding: 5px 0;
+	margin: 8px 0px;
+}
+
+
+@media only screen and (max-width: 1135px){
+	.center-div_login{
+	width: 40%;
+	}
+
+}
+@media only screen and (max-width: 950px){
+	.center-div_signup{
+	width: 50%;
+	}
+
+}
+@media only screen and (max-width: 850px){
+
+	.center-div_signup{
+		width: 60%;
+	}
+
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 672px){
+	.center-div_login{
+	width: 60%;
+	}
+
+	.center-div_signup{
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 598px){
+
+	.center-div_signup{
+		width: 77%;
+	}
+	.form-wrapper-div_signup{
+		width: 80%;
+	}
+
+}
+@media only screen and (max-width: 458px){
+	.center-div_login{
+	width: 80%;
+	}
+
+	.center-div_signup{
+		width: 85%;
+	}
+	.form-wrapper-div_signup{
+		width: 90%;
+	}
+
+}
+@media only screen and (max-width: 350px){
+	.center-div_login{
+	width: 90%;
+	}
+}

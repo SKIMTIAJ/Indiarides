@@ -1,0 +1,961 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Montserrat:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Flamenco&display=swap');
+
+	*{
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+
+	body{
+		color: #fff;
+		/*background-image: linear-gradient(57deg, #99d6ff, #006bb3);*/
+		/*font-family: 'Open Sans Condensed', sans-serif;*/
+
+	}
+	/*linear-gradient(57deg, #99d6ff, #006bb3)*/
+
+	header{
+		width: 100%;
+		height: 100vh;
+		background-image: white;
+		/*background-image: linear-gradient(#00000.5, #00000.5) url('image/background_carpic.jpg');*/
+		/*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../image/background_carpic.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);*/
+
+	}
+
+	.index-header{
+		width: 100%;
+		height: 100vh;
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../image/background_carpic.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: fixed;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+	}
+
+	header section {
+		display: flex; 
+		padding-top: 10px; 
+		/*border: 2px solid red;*/
+	}
+
+	.header-first-child{
+		 margin: 0 auto;
+		 background-color: #336699;
+	}
+	.row-d{
+	 /*max-width:1200px;*/
+	 height: auto;
+	 padding:0.2% 3%;
+	 margin: 0 auto;
+	}
+	.Logo-Img{
+		height: 96px;
+		width: auto;
+		float: left;
+		margin-top:8px;
+		/*border: 1px solid red;*/
+		 
+	}
+	.header-first-child ul{
+		float: right;
+		margin-top: 50px;
+		/*border: 1px solid red;*/
+	}
+	.header-first-child ul li{
+		display: inline-block;
+		list-style-type: none;
+		margin: 0px 20px;
+		/*border: 2px solid red;*/
+	}
+
+	.header-first-child ul li a{
+		color: #fff;
+		padding: 5px 2px;
+		text-decoration: none;
+		padding: 5px 15px;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.header-first-child ul li a:hover{
+		border-bottom: 2px solid #cc00cc;
+	}
+	.menu-icon{
+		display: none;
+		float: right;
+		clear: left;
+	}
+
+	.sidenav{
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #006bb3;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	}
+
+	.sidenav a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 18px;
+	  color: #fff;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+	  color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 30px;
+	  margin-left: 50px;
+	}
+
+	.welComeDiv{
+		align-content: center;
+		display: block;
+		padding: 20px 0px;
+		/*border: 1px solid red;*/
+	}
+	.welComeDiv h2{
+		/* text-transform: uppercase;*/
+		 /*text-align: center;*/
+		 color: #fff;
+		 font-weight: 900;
+		 /*padding: 40px 0px 10px;*/
+		 font-size: 45px;
+		 line-height: 30px;
+		 padding: 40px 0px 20px 20px;
+		 /*font-family: 'Flamenco', cursive;*/
+		 font-family: 'Amaranth', sans-serif;
+		/* word-spacing: 2px;
+		 letter-spacing: 2px;*/
+	}
+	.specialName{
+		/*text-transform:uppercase;*/
+		animation: BlinkName 1s infinite;
+	}
+
+	@keyframes BlinkName{
+		0%{color: red;}
+		25%{color: #bf55ec;}
+		50%{color: white;}
+		100%{color: #bf55ec;}
+	}
+
+	.welComeDiv{
+		overflow: hidden;
+	}
+
+	.welComeDiv p{
+		color: #fff;
+		text-align: left;
+		font-size: 24px;
+		line-height: 24px;
+		font-style: bold;
+		font-weight: 400;
+		word-spacing: 2px;
+		align-items: center;
+		/*font-family: 'Flamenco', cursive;*/
+		font-family: 'Montserrat', sans-serif;
+		/*border: 2px solid red;*/
+		margin: 0 auto;
+		padding: 0px 0px 0px 20px;
+	}
+
+	.welComeTextSpan{
+		font-size: 18px;
+		font-weight: 200;
+	}
+
+	.welcomeDivButton{
+		display: flex;
+		margin-left: 10%;
+		margin-top: 8%;;
+	}
+
+	.bookButton{
+		margin: 0px 10px 0px 0px;
+		padding: 2px 30px;
+		border-radius: 10px;
+		background-color: #ff0;
+	}
+	.priceButton{
+		margin: 10px 0px 0px 0px;
+		padding: 2px 30px;
+		border-radius: 10px;
+	}
+
+	.priceTag{
+		margin: 0px 10px 0px 0px;
+		padding: 2px 30px;
+		border-radius: 10px;
+		background-color: #ff0;
+		float: right;
+	}
+
+	.model{
+		display: none; 
+	   position: fixed; /* Stay in place */
+	   z-index: 1; /* Sit on top */
+	   padding-top: 70px; /* Location of the box */
+	   left: 0;
+	   top: 0;
+	   width: 100%; /* Full width */
+	   height: 100%; /* Full height */
+	   overflow: auto; /* Enable scroll if needed */
+	   background-color: rgb(0,0,0); /* Fallback color */
+	   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	   /*border: 1px solid red;*/
+	}
+
+	.price_model{
+		display: block; 
+	   position: fixed; /* Stay in place */
+	   z-index: 1; /* Sit on top */
+	   padding-top: 100px; /* Location of the box */
+	   left: 0;
+	   top: 0;
+	   width: 100%; /* Full width */
+	   height: 100%; /* Full height */
+	   overflow: auto; /* Enable scroll if needed */
+	   background-color: rgb(0,0,0); /* Fallback color */
+	   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	   /*border: 1px solid red;*/
+	}
+
+	.model-content{
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 10px 5px;
+	  border-radius: 40px;
+	  width: 65%;
+	}
+
+	.price_model-content{
+		background-color: #fefefe;
+	  margin: auto;
+	  padding: 10px 15px;
+	  border-radius: 40px;
+	  width: 40%;
+	  background-color: #fff;
+	}
+
+	.price_model-content form{
+		width:87%;
+		align-items:center;
+		margin: 0 auto;
+		border-radius: 40px;
+		/*padding: 15px 0px;*/
+		/*border: 1px solid red;*/
+		background-color: white;
+	}
+
+	.formChildDiv1{
+		width:87%;
+		align-items:center;
+		margin: 0 auto;
+		border-radius: 40px;
+		/*padding: 15px 0px;*/
+		/*border: 1px solid red;*/
+		background-color: white;
+	}
+	.close {
+	  color: #aaaaaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	  padding: 3px 5px;
+	}
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+	.bookCarBtn{
+		padding: 3px 40px;
+		border: 2px solid #cc00cc;
+		border-radius: 50px;
+		margin-right: 10px;
+		background-color: transparent;
+		color: #cc00cc;
+		display: none;
+	}
+	.priceCarBtn{
+		padding: 3px 40px;
+		border: 2px solid #fff;
+		border-radius: 50px;
+		margin-left: 10px;
+		background-color: transparent;
+		color: white;
+		display: none;
+	}
+	.bookCarBtn:hover{
+		background-color: rgba(77, 210, 255,0.2);
+	}
+	.priceCarBtn:hover{
+		background-color: rgba(77, 210, 255,0.2);
+	}
+
+	.firstPara{
+		width: 90%;
+	}
+	.secondPara{
+		width: 90%;
+		display: none;
+	}
+	.thirdPara{
+		width:90%;
+	}
+	.forthPara{
+		width: 75%;
+	}
+
+	.formChildDiv{
+		display: block;
+		width:65%;
+		align-items:center;
+		margin: 0 auto;
+		border-radius: 40px;
+		margin-top: 30px;
+		padding: 15px 0px;
+		background-color: white;
+		/*border: 2px solid red;*/
+	}
+	.form-wrapper-button{
+		width: 90%;
+		margin: 5px auto 5px;
+		display: flex;
+		/*border: 2px solid red;*/
+		align-items: center;
+		overflow: auto;
+	}
+	.form-btn{
+		text-align: center;
+		margin: auto 0px;
+		padding: 8px 0;
+		font-size: 13px;
+		width: 33.33%;
+		/*border: 2px solid red;*/
+	}
+	.oneWayButton{
+		border-right: 1px solid red;
+		background-color: lightgrey;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.roundTripButton{
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+		background-color: white;
+		/*border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;*/
+	}
+	.dayRentalButton{
+		border-left: 1px solid red;
+		background-color: white;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.formChildDiv form{
+		width: 100%;
+		padding: 5px 25px;
+	}
+	.formChildDiv div label{
+		color: black;
+		margin-top: 5px;
+	}
+	.formChildDiv div input{
+		margin-top: -5px;
+		border-bottom: 2px solid lightgrey;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+	.returnDateGroup{
+		display:none;
+	}
+	.returnTimeGroup{
+		display: none;
+	}
+	.formSubmitButtonGroup{
+		margin-top: 5px;
+		/*border: 2px solid red;*/
+	}
+	.form-select{
+		border-bottom: 2px solid lightgrey;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+	
+	.bodySection_firstDiv h2{
+		font-style: bold;
+		font-weight: 900;
+		color: #006bb3;
+		text-align: center;
+	}
+	.priceCalculationDiv{
+	  clear: both;
+	   height: 80px;
+	}
+	.calculationForm{
+		height: 80px;
+	}
+	.passengerDiv{
+		width: 33.33%;
+		float: left;
+		padding: 0px 10px;
+		
+	}
+	.passengerDiv input{
+		border-bottom: 2px solid #cc00cc;
+		border-left: none;
+		border-top: none;
+		border-right: none;
+		padding: 8px 5px;
+	}
+	.carselectionDiv{
+		width: 33.33%; 
+		float: left;
+		padding: 0px 10px;
+	}
+	.carselectionDiv select{
+		border-bottom: 2px solid #cc00cc;
+		border-left: none;
+		border-top: none;
+		border-right: none;
+		padding: 8px 5px;
+		margin: 3px 0;
+	}
+	.calculateButtonDiv{
+		width: 33.33%;
+		float: right; 
+		padding: 0px 10px;
+		margin:10px 0;
+	}
+	.calculateButtonDiv input{
+		width: 47%; 
+		padding: 12px 0;
+		background-color: #00cc00;
+		border-radius: 10px;
+		font-style: bold;
+		font-weight: 900;
+		font-size: 20px;
+		color: white;
+	}
+	#calculatePrice{
+		float: left;
+	}
+	#booknow{
+		float: right;
+	}
+	.showPriceText{
+		border: 1px solid red; 
+		width: 150px; 
+		margin: 8px auto; 
+		text-align: center; 
+		padding: 4px 0; 
+		border-radius: 10px; 
+		background-color: #00cc00;
+		color: white;
+		font-style: bold;
+		font-size: 18px
+		font-weight:bolder;
+	}
+
+	.bodySection_secondDiv h3{
+		text-align: center;
+		font-style: bold;
+		font-weight: 900;
+		color: #006bb3;
+		padding: 10px 20px;
+		margin: 10px;
+	}
+	.bodySection_secondDiv h5{
+		font-style: bold;
+		font-weight: 900;
+		color: #006bb3;
+		padding: 10px 20px;
+		margin: 10px;
+	}
+	.gallery{
+		display: flex;
+	}
+	.cityDiv{
+		width: 25%;
+		height: auto;
+		overflow: hidden;
+		text-align: center;
+	}
+	.cityDiv>img{
+		width:90%;
+		height:180px;
+		margin: 0 auto;
+		background-size: cover;
+		border-radius: 10px;
+	}
+	.cityDiv p{
+		text-align: center;
+		font-size: 18px;
+		font-style: bold;
+		font-weight: bolder;
+		padding: 4px 0;
+	}
+	.aboutPara{
+		text-align: center;
+
+	}
+	.bodySection_forthDiv {
+		background-image: linear-gradient(57deg, #99d6ff, #006bb3); 
+		margin: 30px 0px 0px;
+		padding: 20px 0px 40px;
+	}
+	.howItWorkDiv{
+		display: flex;
+		/*background-image: linear-gradient(57deg, #99d6ff, #006bb3); */
+	}
+	.horizantalLine{
+		width: 100%;
+		top:50%;
+		border: 2px dashed red;
+		z-index: 2;
+	}
+	.howWeWork{
+		text-align: center;
+		font-style: bold;
+		font-weight: bolder;
+		color: white;
+		padding: 15px 0px;
+	}
+	.bookDiv{
+		width:90%;
+		height:auto;
+		margin: 0 auto;
+		text-align: center;
+		background: transparent;
+		/*background-size: cover;*/
+		border-radius: 10px;
+		/*border: 2px solid red;*/
+	}
+	.howItWorkInnerDiv{
+		width: 100px; 
+		height: 100px; 
+		background-color: white; 
+		margin: 5px auto 0px; 
+		border-radius: 50px;
+		z-index: 1;
+	}
+	.howItWorkInnerDiv>img{
+		width:50px;
+		height:50px;
+		margin: 25% auto;
+	}
+
+	.howItWorkInnerDiv::after{
+		content: "";
+		/*position: relative;*/
+		display: inline-block;
+		top: 24%;
+		right: 0px;
+		height: 2px;
+		width: 50%;
+		/*border: 2px dashed red;*/
+		z-index: -1;
+	}
+
+	.bookDiv p.workTag{
+		text-align: center;
+		font-size: 18px;
+		font-style: bold;
+		font-weight: bolder;
+		padding: 6px 0 0px;
+		color: white;
+	}
+
+	.bookDiv p{
+		margin: 0px 15px 0px;
+		padding: 0px 10px;
+		font-size: 15px;
+		font-style: normal;
+		color: white;
+		word-spacing: 0px;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+
+
+	footer{
+		width: 100%;
+		height: auto;
+		padding: 30px 0px;
+		/*background-color:#004d99;*/
+		background-color: #1e1e1e;
+	}
+	.footer-wrapper{
+		width: 80%;
+		height: auto;
+		margin: 0 auto;	
+		/*border: 1px solid red;*/
+	}
+	.footerDiv{
+		float: left;
+		width: 33.33%;
+		height: auto;
+		/*border: 1px solid yellow;*/
+	}
+	.footerDiv h6{
+		/*padding: 0 50px;*/
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		color: white;
+	}
+	.footerDiv ul{
+		margin:0 auto;
+		vertical-align: middle;
+		/*border: 1px solid yellow;*/
+	}
+	.footerDiv ul li{
+		padding: 0 50px;
+		/*margin: 0 auto;*/
+		text-align: center;
+		list-style-type: none;
+	}
+	.footerDiv ul li a{
+		text-decoration: none;
+		color: white;
+	}
+	.footerDiv ul li a:hover{
+		color: grey;
+	}
+	.footerDiv ul li a>i{
+		margin: 5px 10px;
+	}
+	.footerDiv ul li a>i:hover{
+		color: red;
+	}
+	.copyrightClass{
+		color:#000;
+		clear:both; 
+		text-align:center; 
+		color:white;
+	}
+
+@media only screen and (max-width: 1135px){
+
+	.price_model-content{
+		width: 48%;
+	}
+	.formChildDiv{
+		width: 78%;
+	}
+	.form-btn{
+
+	}
+
+}
+
+@media only screen and (max-width: 952px){
+	.formChildDiv{
+		width: 88%
+	}
+
+	.price_model-content{
+		width: 55%;
+	}
+
+}
+@media only screen and (max-width: 850px){
+	.formChildDiv{
+		width: 98%
+	}
+
+	.header-first-child ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0px 15px;
+	/*border:  2px solid red;*/
+	
+	}
+
+	.header-first-child ul li a{
+		color: #fff;
+		padding: 5px 2px;
+		text-decoration: none;
+		padding: 5px 10px;
+	}
+
+	.welComeDiv p{
+		font-synthesis: 14px;
+	}
+
+	.price_model-content{
+		width: 60%;
+	}
+
+	.footer-wrapper{
+		width: 85%;
+	}
+	.calculateButtonDiv input{
+		font-size: 18px;
+		padding: 14px 0;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.menu-icon{
+		display: block;
+		margin-right: 40px;
+		margin-top: -10px;
+	}
+
+	.price_model-content{
+		width: 68%;
+	}
+
+	.header-first-child ul li{
+		display: none;
+	}
+
+	.formParentDiv{
+			display: none;
+			width: 100%;
+			/*visibility: hidden;*/
+	}
+
+	.model-content{
+	  background-color: #fefefe;
+	  margin: 70px auto;
+	  padding: 10px 5px;
+	  width: 65%;
+	  border-radius: 40px;
+	}
+
+	.welComeDiv{
+		top:100px;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%,0%);
+	}
+
+	.bookCarBtn{
+		display: block;
+	}
+	.priceCarBtn{
+		display: block;
+	}
+	.secondPara{
+		display: none;
+	}
+	.thirdPara{
+		display: none;
+	}
+
+
+}
+
+@media only screen and (max-width: 672px){
+
+	header{
+		height: 100%;
+	}
+
+	.model-content{
+	  background-color: #fefefe;
+	  margin: 70px auto;
+	  padding: 10px 5px;
+	  width: 65%;
+	  border-radius: 40px;
+	  overflow: auto;
+	}
+
+	.price_model-content{
+		width: 78%;
+	}
+
+	.firstPara{
+		width: 80%;
+		white-space: normal;
+		text-overflow: ellipsis;
+		justify-content: center;
+		text-align: justify;
+	}
+
+	.secondPara{
+		display: none;
+	}
+	.thirdPara{
+		display: none;
+	}
+
+	.footer-wrapper{
+		width: 95%;
+	}
+	.bookDiv>img{
+		width: 180px;
+		height: 180px;
+	}
+	.calculateButtonDiv input{
+		font-size: 15px;
+		padding: 16px 0;
+	}
+
+}
+
+@media only screen and (max-width: 598px){
+	.maintext{
+	font-weight: 700; 
+	font-size: 70px; 
+	}
+	.welComeDiv h2{
+		font-size: 35px;
+		font-weight: 700;
+	}
+	.welComeDiv p{
+		font-size: 18px;
+		padding: 0px 0px 0px 24px;
+		line-height: 20px;
+	}
+	.welComeTextSpan{
+		font-size: 15px;
+	}
+	.model-content{
+	  background-color: #fefefe;
+	  margin: 70px auto;
+	  padding: 10px 5px;
+	  width: 80%;
+	  border-radius: 40px;
+	}
+
+	.form-wrapper-button{
+		width: 95%;
+		margin: 5px auto 5px;
+		display: flex;
+		/*border: 2px solid red;*/
+		align-items: center;
+	}
+
+	.form-btn{
+		text-align: center;
+		margin: auto 0px;
+		padding: 8px 0;
+		font-size: 12px;
+		/*border: 2px solid red;*/
+	}
+
+	.price_model-content{
+		width: 90%;
+		padding: 10px 10px;
+	}
+
+	.price_model-content form{
+		width: 95%;
+	}
+	.price_model-content form input{
+		width: 80px;
+	}
+	.priceCalculationDiv{
+	  clear: both;
+	   height: auto;
+	}
+
+	.calculationForm{
+		height: auto;
+	}
+	.passengerDiv{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.carselectionDiv{
+		width:100%; 
+		margin: 10px 0;
+	}
+
+	.calculateButtonDiv{
+		width: 100%;
+		float: left; 
+		padding: 0px 10px;
+		text-align: center;
+		margin:20px 0;
+	}
+
+	.showPriceText{
+		display: none;
+	}
+
+	.gallery{
+		display: block;
+	}
+	.cityDiv{
+		width: 100%;
+	}
+	.cityDiv>img{
+		width:90%;
+		height:220px;
+	}
+
+	.howItWorkDiv{
+		display: block;
+		clear: both;
+	}
+
+	.footer-wrapper{
+		width: 90%;
+	}
+	.footerDiv{
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 458px){
+	.welComeDiv{
+		padding: 0px 0px;
+	}
+	.welComeDiv h2{
+		font-size: 30px;
+		font-weight: 700;
+		text-align: center;
+	}
+	.model-content{
+	  background-color: #fefefe;
+	  margin: 70px auto;
+	  padding: 10px 5px;
+	  width: 88%;
+	  border-radius: 40px;
+	}
+}
+
+@media only screen and (max-width: 395px){
+	.maintext{
+	font-weight: 700; 
+	font-size: 55px; 
+	}
+	.model-content{
+	  background-color: #fefefe;
+	  margin: 70px auto;
+	  padding: 10px 5px;
+	  width: 95%;
+	  border-radius: 40px;
+	}
+}
